@@ -388,21 +388,19 @@
             min-height: 360px;
         }
 
-        .embed-placeholder {
-            min-height: 310px;
-            border: 2px dashed rgba(138, 85, 51, 0.28);
+        .calculator-frame {
+            width: 100%;
+            min-height: 920px;
+            border: 0;
             border-radius: 20px;
-            background: #fcfaf7;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 10px;
-            padding: 26px;
+            background: #ffffff;
         }
 
-        .embed-placeholder strong {
-            font-size: 1.05rem;
+        .calculator-link {
+            display: inline-flex;
+            margin-top: 14px;
+            color: var(--brand-dark);
+            font-weight: 600;
         }
 
         .contact-grid {
@@ -684,11 +682,14 @@
                         </ul>
                     </div>
                     <div class="calculator-shell card">
-                        <!-- Replace this placeholder with your pricing calculator embed code -->
-                        <div class="embed-placeholder" id="calculatorEmbed">
-                            <strong>Project pricing calculator</strong>
-                            <p>Your online estimator will appear here.</p>
-                        </div>
+                        <iframe
+                            class="calculator-frame"
+                            id="calculatorEmbed"
+                            src="https://bravura-pricing-production.up.railway.app/"
+                            title="Bravura pricing calculator"
+                            loading="lazy"
+                        ></iframe>
+                        <a class="calculator-link" href="https://bravura-pricing-production.up.railway.app/" target="_blank" rel="noreferrer">Open calculator in a new tab</a>
                     </div>
                 </div>
             </div>
